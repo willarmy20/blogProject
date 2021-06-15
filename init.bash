@@ -8,4 +8,6 @@
 
 # sequelize model:generate --name comments --attributes userID:integer,postID:integer,body:string
 
+# sequelize migration:create --name add-password
+
 sequelize db:migrate

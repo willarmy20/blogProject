@@ -1,14 +1,33 @@
 const express = require('express');
 const app = express();
-let port = 3000;
+const cookieSession = require('cookie-session');
+const keys = require('./config/keys')
+const passport = require('passport');
+let port = keys.PORT || 3000;
 
-
+// Passport Init
+app.use(passport.initialize());
+app.use(passport.session());
+//Cookie-Session
+app.use(cookieSession({
+    name: 'session',
+    keys: [keys.PP_SECRET], 
+    maxAge: 14 * 24  * 60 * 60 * 1000
+}))
+require('./config/passportsetup')();
 //public
 app.use(express.static('public'));
 //views
 app.set('view engine','ejs');
+//BodyParser
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-app.use(require('./routes/index'));
+//Routes
+app.use(require('./routes/login'));
+app.use(require('./routes/registration'));
+app.use(require('./routes/'));
+
 
 
 //server start
