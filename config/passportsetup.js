@@ -14,7 +14,6 @@ module.exports = function(req,res,next) {
         try {
         // Find all instances of user
         const records = await db.users.findAll({ where: { email: username }});
-        console.log('records: ',records)
         if(records.length !== 0){
             // Record will hold user info
             const record = records[0];
@@ -36,14 +35,12 @@ module.exports = function(req,res,next) {
     }));
     passport.serializeUser((user, done) => {
         console.log('serialUser');
-        console.log(user);
-        done(null, user.id);
+        done(null, user);
         // done(null, user);
     });
-    passport.deserializeUser((id, done) => {
+    passport.deserializeUser((user, done) => {
         console.log('deserializeUser');
-        console.log(id)
-        done(null, "");
+        done(null, user);
     });
 }
 

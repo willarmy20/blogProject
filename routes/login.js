@@ -8,10 +8,10 @@ const SALT_ROUNDS = 10
 
 
 router.get('/login', async (req, res) => {
-    res.render('login',{authFailed: false})
+    res.render('login', { authFailed: false });
 });
 router.get('/loginFailed', async (req, res) => {
-    res.render('login',{authFailed: true})
+    res.render('login', { authFailed: true });
 });
 
 router.post('/login', passport.authenticate('local', { failureRedirect: '/loginFailed' }), async (req, res) => {

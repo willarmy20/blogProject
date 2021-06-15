@@ -5,15 +5,15 @@ const keys = require('./config/keys')
 const passport = require('passport');
 let port = keys.PORT || 3000;
 
-// Passport Init
-app.use(passport.initialize());
-app.use(passport.session());
 //Cookie-Session
 app.use(cookieSession({
     name: 'session',
     keys: [keys.PP_SECRET], 
     maxAge: 14 * 24  * 60 * 60 * 1000
 }))
+// Passport Init
+app.use(passport.initialize());
+app.use(passport.session());
 require('./config/passportsetup')();
 //public
 app.use(express.static('public'));
