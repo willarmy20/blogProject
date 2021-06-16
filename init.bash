@@ -10,4 +10,5 @@
 
 # sequelize migration:create --name add-password
 
-sequelize db:migrate
+
+# sequelize db:migrate

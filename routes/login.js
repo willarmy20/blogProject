@@ -15,16 +15,7 @@ router.get('/loginFailed', async (req, res) => {
 });
 
 router.post('/login', passport.authenticate('local', { failureRedirect: '/loginFailed' }), async (req, res) => {
-    res.send('login submitted')
+    res.render('index')//after login take me to index
 });
-
-
-
-
-
-
-
-
-
 
 module.exports = router

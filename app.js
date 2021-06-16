@@ -5,6 +5,8 @@ const keys = require('./config/keys')
 const passport = require('passport');
 let port = keys.PORT || 3000;
 
+//public
+app.use(express.static('public'));
 //Cookie-Session
 app.use(cookieSession({
     name: 'session',
@@ -15,8 +17,6 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 require('./config/passportsetup')();
-//public
-app.use(express.static('public'));
 //views
 app.set('view engine','ejs');
 //BodyParser
@@ -27,6 +27,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(require('./routes/login'));
 app.use(require('./routes/registration'));
 app.use(require('./routes/'));
+app.use(require('./routes/post'));
+app.use(require('./routes/community'));
+
+
 
 
 
