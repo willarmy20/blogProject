@@ -29,6 +29,7 @@ app.use(require('./routes/registration'));
 app.use(require('./routes/'));
 app.use(require('./routes/post'));
 app.use(require('./routes/community'));
+app.use(require('./routes/comments'))
 
 
 

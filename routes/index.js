@@ -20,7 +20,7 @@ router.get('/', authReq, async (req, res)=>{
 
     // Formatted records is an array of objects (posts)
     const formattedRecords = formatDataValues(records);
-
+    
     res.render('index', {
         formattedRecords
     });
@@ -36,7 +36,9 @@ function formatDataValues(records){
         post.title = record.dataValues.title;
         post.body = record.dataValues.body;
         post.username = record.dataValues.user.dataValues.first_name;
-        post.categoryName = record.dataValues.category.dataValues.title
+        post.categoryName = record.dataValues.category.dataValues.title;
+        post.id = record.dataValues.id;
+        post.url = `/${post.categoryName}/comments/${post.id}/${post.title.split(' ').join('_')}`
         post.createdAt = record.dataValues.createdAt;
         post.updatedAt = record.dataValues.updatedAt;
 

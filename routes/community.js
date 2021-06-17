@@ -25,4 +25,9 @@ router.post('/community', async (req, res)=>{
     }
 })
 
+router.get('/community/all',async (req, res)=>{
+    let community = await db.categories.findAll()
+    res.json(community)
+})
+
 module.exports = router

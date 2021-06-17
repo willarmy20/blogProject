@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Forum :: New topic</title>
+        <title>Forum :: Topic</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
         <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
 
     </head>
-    <body>
+    <body class="topic">
 
         <div class="container-fluid">
 
@@ -48,6 +48,7 @@
             </div>
             <!-- //Slider -->
 
+
             <div class="headernav">
                 <div class="container">
                     <div class="row">
@@ -55,7 +56,7 @@
                         <div class="col-lg-3 col-xs-9 col-sm-5 col-md-3 selecttopic">
                             <div class="dropdown">
                                 <a data-toggle="dropdown" href="#">Borderlands 2</a> <b class="caret"></b>
-                                <ul class="dropdown-menu" role="menu" >
+                                <ul class="dropdown-menu" role="menu">
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Borderlands 1</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-2" href="#">Borderlands 2</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-3" href="#">Borderlands 3</a></li>
@@ -83,7 +84,7 @@
                             <div class="avatar pull-left dropdown">
                                 <a data-toggle="dropdown" href="#"><img src="images/avatar.jpg" alt="" /></a> <b class="caret"></b>
                                 <div class="status green">&nbsp;</div>
-                                <ul class="dropdown-menu" role="menu" >
+                                <ul class="dropdown-menu" role="menu">
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Profile</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-2" href="#">Inbox</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-3" href="#">Log Out</a></li>
@@ -102,7 +103,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 breadcrumbf">
-                            <a href="#">Borderlands 2</a> <span class="diviver">&gt;</span> <a href="#">General Discussion</a> <span class="diviver">&gt;</span> <a href="#">New Topic</a>
+                            <a href="#">Borderlands 2</a> <span class="diviver">&gt;</span> <a href="#">General Discussion</a> <span class="diviver">&gt;</span> <a href="#">Topic Details</a>
                         </div>
                     </div>
                 </div>
@@ -112,42 +113,154 @@
                     <div class="row">
                         <div class="col-lg-8 col-md-8">
 
+                            <!-- POST -->
+                            <div class="post beforepagination">
+                                <div class="topwrap">
+                                    <div class="userinfo pull-left">
+                                        <div class="avatar">
+                                            <img src="images/avatar.jpg" alt="" />
+                                            <div class="status green">&nbsp;</div>
+                                        </div>
+
+                                        <div class="icons">
+                                            <img src="images/icon1.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="posttext pull-left">
+                                        <h2>10 Kids Unaware of Their Halloween Costume</h2>
+                                        <p>Today, we're looking at three particularly interesting stories. Pinterest added a new location-based feature on Wednesday that uses Place Pins as a way to map out vacations and favorite areas. Southwest Airlines is providing Wi-Fi access from gate to gate for $8 per day through an onboard hotspot. And in an effort to ramp up its user base, Google Wallet is offering a debit card that can take out cash from.</p>
+                                    </div>
+                                    <div class="posttext pull-left">
+                                        <div class="textwraper">
+                                            <div class="postreply">Post a Reply</div>
+                                            <textarea name="reply" id="reply" placeholder="Type your message here"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>                              
+                                <div class="postinfobot">
+
+                                    <div class="likeblock pull-left">
+                                        <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>25</a>
+                                        <a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>3</a>
+                                    </div>
+
+                                    <div class="prev pull-left">                                        
+                                        <a href="#"><i class="fa fa-reply"></i></a>
+                                    </div>
+
+                                    <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20 Nov @ 9:30am</div>
+
+                                    <div class="next pull-right">                                        
+                                        <a href="#"><i class="fa fa-share"></i></a>
+
+                                        <a href="#"><i class="fa fa-flag"></i></a>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div><!-- POST -->
+                            <br>
+                            <!-- POST -->
+                            <div class="post">
+                                <div class="topwrap">
+                                    <div class="userinfo pull-left">
+                                        <div class="avatar">
+                                            <img src="images/avatar2.jpg" alt="" />
+                                            <div class="status red">&nbsp;</div>
+                                        </div>
+
+                                        
+                                    </div>
+                                    <div class="posttext pull-left">
+                                        <p>Typography helps you engage your audience and establish a distinct, unique personality on your website. Knowing how to use fonts to build character in your design is a powerful skill, and exploring the history and use of typefaces, as well as typogra...</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>                              
+                                <div class="postinfobot">
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div><!-- POST -->
+
 
 
                             <!-- POST -->
                             <div class="post">
-                                <form action="/community" class="form newtopic" method="POST">
+                                <div class="topwrap">
+                                    <div class="userinfo pull-left">
+                                        <div class="avatar">
+                                            <img src="images/avatar3.jpg" alt="" />
+                                            <div class="status red">&nbsp;</div>
+                                        </div>
+
+                                        <div class="icons">
+                                            <img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="posttext pull-left">
+
+                                        <blockquote>
+                                            <span class="original">Original Posted by - theguy_21:</span>
+                                            Did you see that Dove ad pop up in your Facebook feed this year? How about the Geico camel one? 
+                                        </blockquote>
+                                        <p>Toronto Mayor Rob Ford does not have a bigger fan than "Anchorman's" Ron Burgundy. In fact, Burgundy wants Ford to be re-elected so much, that he agreed to sing the campaign song Brien. The tune in question ...</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>                              
+                                <div class="postinfobot">
+
+                                    <div class="likeblock pull-left">
+                                        <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>55</a>
+                                        <a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>12</a>
+                                    </div>
+
+                                    <div class="prev pull-left">                                        
+                                        <a href="#"><i class="fa fa-reply"></i></a>
+                                    </div>
+
+                                    <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20 Nov @ 9:50am</div>
+
+                                    <div class="next pull-right">                                        
+                                        <a href="#"><i class="fa fa-share"></i></a>
+
+                                        <a href="#"><i class="fa fa-flag"></i></a>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div><!-- POST -->
+
+
+
+                            <!-- POST -->
+                            <div class="post">
+                                <form action="#" class="form" method="post">
                                     <div class="topwrap">
                                         <div class="userinfo pull-left">
                                             <div class="avatar">
                                                 <img src="images/avatar4.jpg" alt="" />
                                                 <div class="status red">&nbsp;</div>
                                             </div>
-                                        </div>
-                                        <div class="posttext pull-left">
-                                            <div>
-                                                Community Title: <input type="text" name="title"  placeholder="Enter Community Title" class="form-control" />
+
+                                            <div class="icons">
+                                                <img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
                                             </div>
-                                            <div>
-                                                Commuinty Discription: <textarea name="description"  id="desc" placeholder="Description"  class="form-control" ></textarea>
-                                            </div>
-                                           
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>                              
                                     <div class="postinfobot">
 
                                         <div class="notechbox pull-left">
-                                            
+                                            <input type="checkbox" name="note" id="note" class="form-control" />
                                         </div>
 
                                         <div class="pull-left">
-                                            
+                                            <label for="note"> Email me when some one post a reply</label>
                                         </div>
 
                                         <div class="pull-right postreply">
                                             <div class="pull-left smile"><a href="#"><i class="fa fa-smile-o"></i></a></div>
-                                            <div class="pull-left"><button id="buttonpost" type="submit" class="btn btn-primary">Post</button></div>
+                                            <div class="pull-left"><button type="submit" class="btn btn-primary">Post Reply</button></div>
                                             <div class="clearfix"></div>
                                         </div>
 
@@ -157,9 +270,10 @@
                                 </form>
                             </div><!-- POST -->
 
-                            
+
                         </div>
                         <div class="col-lg-4 col-md-4">
+
                             <!-- -->
                             <div class="sidebarblock">
                                 <h3>Categories</h3>
@@ -264,7 +378,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-xs-12">
+                        <div class="col-lg-8">
                             <div class="pull-left"><a href="#" class="prevnext"><i class="fa fa-angle-left"></i></a></div>
                             <div class="pull-left">
                                 <ul class="paginationforum">
@@ -285,11 +399,10 @@
                                 </ul>
                             </div>
                             <div class="pull-left"><a href="#" class="prevnext last"><i class="fa fa-angle-right"></i></a></div>
-                            <div class="clearfix"></div>
+                            <div class="clearfix"></div>                        
                         </div>
                     </div>
                 </div>
-
 
             </section>
 
