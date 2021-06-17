@@ -1,10 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const db = require("../models");
-
-
-
-
+const formatPost = require('../utils/formatPost');
+const formatComments = require('../utils/formatComments');
 
 router.get('/:categoryname/comments/:postid/:postname', async (req, res)=>{
     const post = await db.posts.findByPk(req.params.postid, { include:[
@@ -18,13 +16,23 @@ router.get('/:categoryname/comments/:postid/:postname', async (req, res)=>{
         where: { postID: req.params.postid },
         order: [
             ["createdAt","DESC"]
-        ]
-    })
-    console.log(comments);
+        ],
+        include: [
+            { 
+                model: db.users,
+                attributes: ['first_name'],
+                required: true
+            }
+    ]})
 
-    res.render("comments");
+    const formattedPost = formatPost(post);
+    const formattedComments = formatComments(comments);
+
+    res.render("comments", {
+        formattedPost,
+        formattedComments
+    });
 })
-
 
 
 module.exports = router
