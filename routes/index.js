@@ -20,7 +20,6 @@ router.get('/', authReq, async (req, res)=>{
 
     // Formatted records is an array of objects (posts)
     const formattedRecords = formatDataValues(records);
-    
     res.render('index', {
         formattedRecords
     });
