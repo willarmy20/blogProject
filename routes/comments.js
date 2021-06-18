@@ -34,6 +34,10 @@ router.get('/:categoryname/comments/:postid/:postname', async (req, res)=>{
     });
 })
 
+router.post('/:categoryname/comments/:postid/:postname', async (req, res)=>{
+    console.log(req.body)
+})
+
 
 module.exports = router
 
