@@ -3,7 +3,7 @@ const app = express();
 const cookieSession = require('cookie-session');
 const keys = require('./config/keys')
 const passport = require('passport');
-let port = keys.PORT || 3000;
+let port = keys.PORT;
 
 //public
 app.use(express.static('public'));
@@ -29,10 +29,7 @@ app.use(require('./routes/registration'));
 app.use(require('./routes/'));
 app.use(require('./routes/post'));
 app.use(require('./routes/community'));
-app.use(require('./routes/comments'))
-
-
-
+app.use(require('./routes/comments'));
 
 
 //server start
