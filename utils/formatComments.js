@@ -4,16 +4,17 @@ module.exports = function formatComments(comments){
     // comment - body, username, createdat
     // [{}, {}, {}]
     const formattedComments = [];
-    let commentData = {}; 
+
 
     comments.forEach(comment => {
-        commentData.body = comment.dataValues.body;
-        commentData.createdAt = comment.dataValues.createdAt;
-        commentData.username = comment.dataValues.user.dataValues.first_name;
 
-        formattedComments.push(commentData);
-        commentData = {};
+        comment.body = comment.dataValues.body;
+        comment.createdAt = comment.dataValues.createdAt;
+        comment.username = comment.dataValues.user.dataValues.first_name;
+
+        formattedComments.push(comment);
+
     })
-
+        console.log("commentArray", formattedComments)
     return formattedComments;
 }
