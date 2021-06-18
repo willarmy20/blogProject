@@ -89,7 +89,7 @@ ul.socialicons li a:hover {
 
 
 .content {
-    background-color: #ecf0f1;
+    background-color:black;
     border-top: solid 1px #e0e4e5;
 }
 
@@ -149,6 +149,7 @@ ul.socialicons li a:hover {
 .avt {
     margin-top: 16px;
     height: 38px;
+
 }
 
 .avt button {
@@ -188,6 +189,9 @@ ul.socialicons li a:hover {
 
 .avatar img {
     border-radius: 50%;
+    width: 70px;
+    height:70px;
+
 }
 
 .avatar .status {
