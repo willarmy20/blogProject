@@ -15,6 +15,6 @@ module.exports = function formatComments(comments){
         formattedComments.push(comment);
 
     })
-        console.log("commentArray", formattedComments)
+        // console.log("commentArray", formattedComments)
     return formattedComments;
 }

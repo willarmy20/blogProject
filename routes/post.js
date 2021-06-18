@@ -12,7 +12,6 @@ router.post('/post', async (req, res)=>{
         //get information from header 
         let {title, body, category} = req.body;
         //store title, body inside database
-        console.log(category)
         let result = await db.posts.create({
         userID: parseInt(req.user.id),
         categoryID: parseInt(category),

@@ -126,7 +126,7 @@
                                        
                                     </div>
                                     <div class="posttext pull-left">
-                                        <h5><%= formattedComments[index].username %> <%= formattedComments[index].createdAt %></h5>
+                                    <h5> <%= formattedComments[index].username %> <%= formattedComments[index].createdAt %></h5>
                                         <p> <%= formattedComments[index].body %></p>
                                     </div>
                                     <div class="clearfix"></div>
@@ -169,7 +169,7 @@
 
                                         <div class="pull-right postreply">
                                             <div class="pull-left smile"><a href="#"><i class="fa fa-smile-o"></i></a></div>
-                                            <div class="pull-left"><button type="submit" class="btn btn-primary">Post Reply</button></div>
+                                            <div class="pull-left"><button id="submitbutton" name="comments" class="btn btn-primary">Post Reply</button></div>
                                             <div class="clearfix"></div>
                                         </div>
 
@@ -201,7 +201,7 @@
                                 </div>    
                                 
                                 <div id="container">
-                                    
+
                                 </div>
                                 <div class="postinfobot">
 

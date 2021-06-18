@@ -1,10 +1,10 @@
-let submitButton = document.query ...
+let submitButton = document.getElementById('submitbutton');
 
 submitButton.addEventListener('click',(e)=>{
   e.preventDefault();
-  let reply = document.query ....
-  let data = { comment: reply.value };
-
+  let reply = document.querySelector('#reply').value
+  let data = { reply: reply};
+  console.log(window.location.href)
   fetch(window.location.href,{
       method:"POST",
       headers:{

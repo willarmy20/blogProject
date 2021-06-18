@@ -9,7 +9,6 @@ router.get('/community', (req, res)=>{
 
 router.post('/community', async (req, res)=>{
     try{
-        console.log('made it')
         //get information from header 
         let {title, description} = req.body;
         //store title, description inside database
@@ -18,7 +17,6 @@ router.post('/community', async (req, res)=>{
         description: description
         })
         res.render('index')
-        console.log(result)
     }
     catch(error){
         res.send(error)
