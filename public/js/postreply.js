@@ -1,10 +1,12 @@
-let submitButton = document.getElementById('submitbutton');
+let submitForm = document.getElementById('postform');
 
-submitButton.addEventListener('click',(e)=>{
+submitForm.addEventListener('submit',(e)=>{
   e.preventDefault();
-  let reply = document.querySelector('#reply').value
-  let data = { reply: reply};
-  console.log(window.location.href)
+  let reply = document.querySelector('#reply').value;
+  let userId = document.querySelector('#userPost>p').id;
+
+  let data = { reply, userId };
+
   fetch(window.location.href,{
       method:"POST",
       headers:{
@@ -15,4 +17,5 @@ submitButton.addEventListener('click',(e)=>{
   .then(data=>console.log('success'))
   .catch(err=>console.log('err'));
 
-});       
+  location.reload();
+});

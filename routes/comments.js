@@ -36,19 +36,16 @@ router.get('/:categoryname/comments/:postid/:postname', async (req, res)=>{
 
 router.post('/:categoryname/comments/:postid/:postname', async (req, res)=>{
     try{
-        console.log('made it')
         //get replies from comments  
-        let {reply} = req.body;
-        //store replies inside database
-        let replies = await db.posts.create({
+        let {userId, reply} = req.body;
+        // store replies inside database
+        let replies = await db.comments.create({
             //when you have a : you have to use req.params
-        postID: req.params.postid,
-        body: reply
-        })
-        console.log(req.body)
+            userID: userId,
+            postID: req.params.postid,
+            body: reply
+        });
     }
-
-
     catch(error){
         res.send(error)
     }

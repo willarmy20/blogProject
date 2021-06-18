@@ -112,161 +112,88 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8">
+                            
 
-                            <!-- POST -->
-                            <% for( let index = 0; index < formattedComments.length; index++ ) { %>
+                            <!-- USER POST -->
                             <div class="post beforepagination">
                                 <div class="topwrap">
                                     <div class="userinfo pull-left">
-                                        <div class="avatar">
-                                            <img src="/images/babygamer.jpeg" alt="" />
+                                        <div id="userPost" class="avatar">
+                                            <!-- User Post: Image goes here -->
+                                            <img src="images/avatar.jpg" alt="" />
+                                            <p id="<%= formattedPost.userID %>"><%= formattedPost.username %></p>
                                             <div class="status green">&nbsp;</div>
                                         </div>
 
-                                       
+                                        <div class="icons">
+                                            <img src="images/icon1.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
+                                        </div>
                                     </div>
                                     <div class="posttext pull-left">
-                                    <h5> <%= formattedComments[index].username %> <%= formattedComments[index].createdAt %></h5>
-                                        <p> <%= formattedComments[index].body %></p>
+                                        <h2>POST: <%= formattedPost.title %> </h2>
+                                        <p><%= formattedPost.body %> </p>
+                                        <p>Created At: <%= formattedPost.createdAt %> </p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>                              
-                                <div class="postinfobot">
-
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div><!-- POST -->
+                            </div><!-- USER POST --> 
 
                             <br>
 
-                            <div class="post">
-                                <form action="#" id="reply-form" class="form" method="post">
-                                    <div class="topwrap">
-                                        <div class="userinfo pull-left">
-                                            <!-- <div class="avatar">
-                                                    <img src="/images/hand_avatar.jpeg" alt="" /> 
-                                                    <div class="status red">&nbsp;</div> 
-                                            </div> -->
-
-                                        </div>
-                                        <div class="posttext pull-left">
-                                            <div class="textwraper">
-                                                <div class="postreply">Post a Reply</div>
-                                                <textarea name="reply" id="reply" placeholder="Type your message here"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>                              
-                                    <div class="postinfobot">
-
-                                        <div class="notechbox pull-left">
-                                            <input type="checkbox" name="note" id="note" class="form-control" />
-                                        </div>
-
-                                        <div class="pull-left">
-                                            <label for="note"> Email me when some one post a reply</label>
-                                        </div>
-
-                                        <div class="pull-right postreply">
-                                            <div class="pull-left smile"><a href="#"><i class="fa fa-smile-o"></i></a></div>
-                                            <div class="pull-left"><button id="submitbutton" name="comments" class="btn btn-primary">Post Reply</button></div>
-                                            <div class="clearfix"></div>
-                                        </div>
-
-
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </form>
-                            </div><!-- POST -->
-
-                            <br>
-
-                            <!-- POST -->
+                        <% for( let index = 0; index < formattedComments.length; index++ ) { %>
+                            <!-- Comment -->
                             <div class="post">
                                 <div class="topwrap">
                                     <div class="userinfo pull-left">
                                         <div class="avatar">
-                                            <img src="/images/hand_avatar.jpeg" alt="" />
+                                            <!-- Image goes here -->
+                                            <img src="images/avatar2.jpg" alt="" />
+                                            <p><%= formattedComments[index].username %> </p>
                                             <div class="status red">&nbsp;</div>
                                         </div>
+                                    </div>
+                                    <div class="posttext pull-left">
+                                        <p><%= formattedComments[index].body %> </p>
+                                        <p>Created At: <%= formattedComments[index].createdAt %> </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>                              
+                            </div><!-- Comment -->
+                        <% } %>
+
+                        <!-- Submit form reply -->
+                        <!-- POST -->
+                        <div class="post">
+                            <form id="postform" class="form">
+                                <div class="topwrap">
+                                    <div class="userinfo pull-left">
 
                                         <div class="icons">
-                                            <img src="images/icon3.jpg" alt="" />
+                                            <img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div class="posttext pull-left">
-                                        <p>Typography helps you engage your audience and establish a distinct, unique personality on your website. Knowing how to use fonts to build character in your design is a powerful skill, and exploring the history and use of typefaces, as well as typogra...</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>    
-                                
-                                <div id="container">
-
-                                </div>
-                                <div class="postinfobot">
-
-                                    <div class="likeblock pull-left">
-                                        <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>10</a>
-                                        <a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>1</a>
-                                    </div>
-
-                                    <div class="prev pull-left">                                        
-                                        <a href="#"><i class="fa fa-reply"></i></a>
-                                    </div>
-
-                                    <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20 Nov @ 9:45am</div>
-
-                                    <div class="next pull-right">                                        
-                                        <a href="#"><i class="fa fa-share"></i></a>
-
-                                        <a href="#"><i class="fa fa-flag"></i></a>
-                                    </div>
-
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div><!-- POST -->
-                            <% } %> 
-
-
-                            <!-- POST -->
-                            <div class="post">
-                                <div class="topwrap">
-                                    <div class="userinfo pull-left">
-                                        <div class="avatar">
-                                            <img src="/images/controller_avatar.jpeg" alt="" />
-                                            <div class="status red">&nbsp;</div>
+                                        <div class="textwraper">
+                                            <div class="postreply">Post a Reply</div>
+                                            <textarea name="reply" id="reply" placeholder="Type your message here"></textarea>
                                         </div>
-
+                                    </div>
                                     <div class="clearfix"></div>
                                 </div>                              
                                 <div class="postinfobot">
 
-                                     <div class="likeblock pull-left">
-                                        <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>55</a>
-                                        <a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>12</a>
-                                    </div> 
+                                    <div class="pull-right postreply">
+                                        <div class="pull-left smile"><a href="#"><i class="fa fa-smile-o"></i></a></div>
+                                        <div class="pull-left"><button type="submit" class="btn btn-primary">Post Reply</button></div>
+                                        <div class="clearfix"></div>
+                                    </div>
 
-                                     <div class="prev pull-left">                                        
-                                        <a href="#"><i class="fa fa-reply"></i></a>
-                                    </div> 
-
-                                     <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20 Nov @ 9:50am</div>
-
-                                    <div class="next pull-right">                                        
-                                        <a href="#"><i class="fa fa-share"></i></a>
-
-                                        <a href="#"><i class="fa fa-flag"></i></a>
-                                    </div> 
 
                                     <div class="clearfix"></div>
                                 </div>
-                            </div><!-- POST -->
-
-
-
-                            <!-- POST -->
-                            
-
+                            </form>
+                        </div><!-- POST -->
+                        <!-- End submit form -->
 
                         </div>
                         <div class="col-lg-4 col-md-4">
