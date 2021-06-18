@@ -9,6 +9,14 @@
 # sequelize model:generate --name comments --attributes userID:integer,postID:integer,body:string
 
 # sequelize migration:create --name add-password
+# sequelize migration:create --name remove-bio
+
+# sequelize seed:generate --name users
+# sequelize seed:generate --name categories
+# sequelize seed:generate --name posts
+# sequelize seed:generate --name comments
+
 
 
 # sequelize db:migrate
+sequelize db:seed:all
