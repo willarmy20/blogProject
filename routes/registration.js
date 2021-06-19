@@ -17,13 +17,10 @@ router.post('/register', async (req, res)=>{
             email: username
         }
     });
-    // console.log('persistedUser: ',persistedUser);
     
     if(persistedUser.length == 0){
-        console.log('made it');
         const passwordEncrypted = bcrypt.hashSync(password, 8);
-        // console.log(passwordEncrypted);
-        const result = await db.users.create({
+        await db.users.create({
             first_name: first_name,
             last_name: last_name,
             email: username,
@@ -31,7 +28,6 @@ router.post('/register', async (req, res)=>{
         });
         res.redirect('/login');
     } else{
-
         res.render('registration',{
             userExist: true
         })

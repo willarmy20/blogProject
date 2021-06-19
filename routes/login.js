@@ -14,4 +14,4 @@ router.post('/login', passport.authenticate('local', { failureRedirect: '/loginF
     res.redirect('/')//after login take me to index
 });
 
-module.exports = router
+module.exports = router;
