@@ -56,7 +56,7 @@
                             <div class="dropdown">
                                 <a data-toggle="dropdown" href="#" >Communities</a> <b class="caret"></b>
                                 <ul id="community-list" class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/community">Create Community</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/communityPost">Create Community</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,9 +71,10 @@
                         </div>
                         <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
                             <div class="stnt pull-left">  
-                                <button class="btn btn-primary"><a href="/post" style="color:white;">Create Post</a></button>
+                                <button class="btn btn-primary"><a href="/topicPost" style="color:white;">Create Post</a></button>
                             </div>
                             
+                            <div class="env pull-left"><i class="fa fa-envelope"></i></div>
 
                             <div class="avatar pull-left dropdown">
                                 <a data-toggle="dropdown" href="#"><img src="/images/gameboy_avatar.jpeg" alt="" /></a> <b class="caret"></b>
@@ -103,12 +104,15 @@
                                     <div class="userinfo pull-left">
                                         <div class="avatar">
                                             <img src="/images/babygamer.jpeg"  alt="" />
+                                            <p><%= formattedRecords[index].username %> </p>
                                             <div class="status green">&nbsp;</div>
                                         </div>
                                     </div>
                                     <div class="posttext pull-left">
-                                        <h2><a href="<%=formattedRecords[index].url %> "><%= formattedRecords[index].title %> </a></h2>
-                                        <p><%=formattedRecords[index].body %> </p>
+                                        <p>r/ <%= formattedRecords[index].categoryName %> </p>
+                                        <h2><a href="<%=formattedRecords[index].url %> ">POST: <%= formattedRecords[index].title %> </a></h2>
+                                        <p><%= formattedRecords[index].body %> </p><br>
+                                        <p>Created At: <%= formattedRecords[index].createdAt %> </p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -120,8 +124,8 @@
                                         </div>
 
                                     </div>
-                                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>                                    
+                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>  
+                                    <hr>                                  
                                 </div>
                                 <div class="clearfix"></div>
                             </div><!-- POST -->

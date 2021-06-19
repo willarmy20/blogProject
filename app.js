@@ -26,10 +26,11 @@ app.use(express.urlencoded({ extended: false }));
 //Routes
 app.use(require('./routes/login'));
 app.use(require('./routes/registration'));
-app.use(require('./routes/'));
-app.use(require('./routes/post'));
+app.use(require('./routes/topicPost'));
+app.use(require('./routes/communityPost'));
 app.use(require('./routes/community'));
 app.use(require('./routes/comments'));
+app.use(require('./routes/'));
 
 
 //server start

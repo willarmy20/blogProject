@@ -1,13 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const db = require("../models")
+const db = require("../models");
+const authReq = require('../middleware/auth');
 
 
-router.get('/post', (req, res)=>{
-    res.render('post');
+router.get('/topicPost', authReq, (req, res)=>{
+    res.render('topicPost');
 })
 
-router.post('/post', async (req, res)=>{
+router.post('/topicPost', async (req, res)=>{
     try{
         //get information from header 
         let {title, body, category} = req.body;
