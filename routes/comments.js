@@ -8,7 +8,7 @@ router.get('/:categoryname/comments/:postid/:postname', async (req, res)=>{
     const post = await db.posts.findByPk(req.params.postid, { include:[
         { 
             model: db.users,
-            attributes: ['first_name'],
+            attributes: ['first_name', 'last_name', 'id'],
             required: true
         }
     ]})
@@ -34,6 +34,22 @@ router.get('/:categoryname/comments/:postid/:postname', async (req, res)=>{
     });
 })
 
+router.post('/:categoryname/comments/:postid/:postname', async (req, res)=>{
+    try{
+        //get replies from comments  
+        let {userId, reply} = req.body;
+        // store replies inside database
+        let replies = await db.comments.create({
+            //when you have a : you have to use req.params
+            userID: userId,
+            postID: req.params.postid,
+            body: reply
+        });
+    }
+    catch(error){
+        res.send(error)
+    }
+})
 
 module.exports = router
 
