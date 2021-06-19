@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const db = require("../models")
+const db = require("../models");
+const authReq = require('../middleware/auth');
 
 
-router.get('/post', (req, res)=>{
+router.get('/post', authReq, (req, res)=>{
     res.render('post');
 })
 
