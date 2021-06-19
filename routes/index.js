@@ -17,7 +17,6 @@ router.get('/', async (req, res)=>{
         }
     ]});
 
-    // Formatted records is an array of objects (posts)
     const formattedRecords = formatRecords(records);
     
     res.render('index', {
