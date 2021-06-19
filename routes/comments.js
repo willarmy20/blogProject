@@ -11,11 +11,11 @@ router.get('/:categoryname/comments/:postid/:postname', async (req, res)=>{
             attributes: ['first_name', 'last_name', 'id'],
             required: true
         }
-    ]})
+    ]});
     const comments = await db.comments.findAll({ 
         where: { postID: req.params.postid },
         order: [
-            ["createdAt","DESC"]
+            ["createdAt","ASC"]
         ],
         include: [
             { 
@@ -23,7 +23,7 @@ router.get('/:categoryname/comments/:postid/:postname', async (req, res)=>{
                 attributes: ['first_name'],
                 required: true
             }
-    ]})
+    ]});
 
     const formattedPost = formatPost(post);
     const formattedComments = formatComments(comments);
