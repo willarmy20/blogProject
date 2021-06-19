@@ -17,5 +17,5 @@ submitForm.addEventListener('submit',(e)=>{
   .then(data=>console.log('success'))
   .catch(err=>console.log('err'));
 
-  location.reload();
+  window.location.reload();
 });
