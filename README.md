@@ -1,5 +1,5 @@
 # <p align="center"> Game Lounge </p>
-![logo 3](https://user-images.githubusercontent.com/81721198/122681464-6eefc500-d1c2-11eb-8fb0-5bc90e3304e0.jpg)<br>
+![](public/images/logo_3.png)br>
 <br>
 
 ## About this project 📝
