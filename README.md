@@ -1,5 +1,7 @@
 # <p align="center"> Game Lounge </p>
-![](public/images/logo_3.png)br>
+<p align="center">
+  <img width="600" height="200" src="public/images/logo_3.png">
+</p>![](public/images/logo_3.png)<br>
 <br>
 
 ## About this project 📝
