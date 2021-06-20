@@ -57,7 +57,7 @@ This was suppose to be a 2-4 pearson team project. Things happen so this turned 
 ## Authors
 <hr>
 
-* [LaQuinta Williams](https://github.com/willarmy20)
+  [LaQuinta Williams](https://github.com/willarmy20)
   [Matthew Fisher]- Contributor
 <br>
 <br>
