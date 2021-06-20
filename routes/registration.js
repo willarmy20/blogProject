@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs')
 const db = require('../models');
-const SALT_ROUNDS = 10
 
 router.get('/registration', (req, res) => {
     res.render('registration');
@@ -10,18 +9,16 @@ router.get('/registration', (req, res) => {
 
 router.post('/register', async (req, res)=>{
     try{
-    let {username,password} = req.body
-    console.log(req.body)
-    let persistedUser = await db.users.findAll({
+    const { first_name, last_name, username, password } = req.body
+    
+    const persistedUser = await db.users.findAll({
         where:{
             email: username
         }
     });
     
-    if(persistedUser.length == 0){
-        // console.log('made it');
+    if(persistedUser.length === 0){
         const passwordEncrypted = bcrypt.hashSync(password, 8);
-        console.log(passwordEncrypted);
         const result = await db.users.create({
             first_name: first_name,
             last_name: last_name,
@@ -29,10 +26,10 @@ router.post('/register', async (req, res)=>{
             password: passwordEncrypted
         });
         res.redirect('/login');
-    } else{
+    } else {
         res.render('registration',{
             userExist: true
-        })
+        });
     }
     } catch (err) {
         res.send(err);
