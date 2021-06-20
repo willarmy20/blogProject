@@ -21,7 +21,7 @@
 <br>
 
 
-##<p align="center">Code snipets</p>
+## <p align="center">Code snipets</p>
 <hr>
 
 
@@ -46,8 +46,8 @@
 
 <br>
 <br>
-
-                                ##<p align="center">Challenges Faced</p>
+                                
+ ##  <p align="center">Challenges Faced</p>
 <hr>
  ???
 <br>
@@ -58,7 +58,7 @@
 
 
 
-                                ##<p align="center">Authors</p>
+##  <p align="center">Authors</p>
 <hr>
 
   [LaQuinta Williams](https://github.com/willarmy20)<br>
