@@ -29,26 +29,22 @@
         <link rel="stylesheet" type="text/css" href="/rs-plugin/css/settings.css" media="screen" />
 
     </head>
-    <body class="topic">
-
+    <body >
         <div class="container-fluid">
-
             <!-- Slider -->
-            <div class="tp-banner-container">
+            <!-- <div class="tp-banner-container">
                 <div class="tp-banner" >
-                    <ul>	
+                    <ul>	 -->
                         <!-- SLIDE  -->
-                        <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <!-- <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
                             <!-- MAIN IMAGE -->
-                            <img src="/images/playstation_home.jpeg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <!-- <img src="/images/playstationWorld.jp"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"> --> 
                             <!-- LAYERS -->
-                        </li>
+                        <!-- </li>
                     </ul>
                 </div>
-            </div>
-            <!-- //Slider -->
-
-
+            </div> -->
+            <!-- //Slider -->           
             <div class="headernav">
                 <div class="container">
                     <div class="row">
@@ -60,7 +56,6 @@
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Borderlands 1</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-2" href="#">Borderlands 2</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-3" href="#">Borderlands 3</a></li>
-
                                 </ul>
                             </div>
                         </div>
@@ -78,10 +73,8 @@
                                 <form action="/topicPost" method="post" class="form">
                                     <button class="btn btn-primary">Start New Topic</button>
                                 </form>
-                            </div>
-                            <div class="env pull-left"><i class="fa fa-envelope"></i></div>
-
-                            <div class="avatar pull-left dropdown">
+                            </div> -->
+                            <div class="avatar-1 pull-left dropdown">
                                 <a data-toggle="dropdown" href="#"><img src="/images/gameboy_avatar.jpeg" alt="" /></a> <b class="caret"></b>
                                 <div class="status green">&nbsp;</div>
                                 <ul class="dropdown-menu" role="menu">
@@ -96,7 +89,6 @@
                     </div>
                 </div>
             </div>
-
             <section class="content">
                 <div class="container">
                     <div class="row">
@@ -109,21 +101,20 @@
                     <div class="row">
                         <div class="col-lg-8 col-md-8">
                             <!-- USER POST -->
-                            <div class="post beforepagination">
-                                <div class="topwrap">
-                                    <div class="userinfo pull-left">
+                            <div class="post-beforepagination-2 ">
+                                <div class="topwrap-2">
+                                    <div class="userinfo-1 pull-left">
                                         <div id="userPost" class="avatar">
                                             <!-- User Post: Image goes here -->
                                             <img src="/images/babygamer.jpeg" alt="" />
                                             <p id="<%= formattedPost.userID %>"><%= formattedPost.username %></p>
                                             <div class="status green">&nbsp;</div>
                                         </div>
-
                                         <div class="icons">
                                             <img src="images/icon1.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
                                         </div>
                                     </div>
-                                    <div class="posttext pull-left">
+                                    <div class="posttext-2 pull-left">
                                         <h2>POST: <%= formattedPost.title %> </h2>
                                         <p><%= formattedPost.body %> </p> <br>
                                         <p>Created At: <%= formattedPost.createdAt %> </p>
@@ -131,9 +122,7 @@
                                     <div class="clearfix"></div>
                                 </div>                              
                             </div><!-- USER POST --> 
-
                             <br>
-
                         <% for( let index = 0; index < formattedComments.length; index++ ) { %>
                             <!-- Comment -->
                             <div class="post">
@@ -154,14 +143,12 @@
                                 </div>                              
                             </div><!-- Comment -->
                         <% } %>
-
                         <!-- Submit form reply -->
                         <!-- POST -->
                         <div class="post">
                             <form id="postform" class="form">
                                 <div class="topwrap">
                                     <div class="userinfo pull-left">
-
                                         <div class="icons">
                                             <img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
                                         </div>
@@ -175,23 +162,18 @@
                                     <div class="clearfix"></div>
                                 </div>                              
                                 <div class="postinfobot">
-
                                     <div class="pull-right postreply">
                                         <div class="pull-left smile"><a href="#"><i class="fa fa-smile-o"></i></a></div>
                                         <div class="pull-left"><button type="submit" class="btn btn-primary">Post Reply</button></div>
                                         <div class="clearfix"></div>
                                     </div>
-
-
                                     <div class="clearfix"></div>
                                 </div>
                             </form>
                         </div><!-- POST -->
                         <!-- End submit form -->
-
                         </div>
                         <div class="col-lg-4 col-md-4">
-
                             <!-- -->
                             <div class="sidebarblock">
                                 <h3>Categories</h3>
@@ -208,9 +190,6 @@
                                     </ul>
                                 </div>
                             </div>
-
-                            
-
                             <!-- -->
                             <div class="sidebarblock">
                                 <h3>Promotion Ads</h3>
@@ -235,14 +214,10 @@
                                     <a href="#">Loud and Brave: Saudi Women Set to Protest Driving Ban</a>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
-
             </section>
-
             <footer>
                 <div class="container">
                     <div class="row">
@@ -294,8 +269,6 @@
             });	//ready
 
         </script>
-
-       
         <!-- END REVOLUTION SLIDER -->
         <script src="/js/custom/postreply.js"></script>
     </body>
