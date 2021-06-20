@@ -1,6 +1,5 @@
 # <p align="center"> Game Lounge </p>
-
-<br>
+![logo 3](https://user-images.githubusercontent.com/81721198/122681464-6eefc500-d1c2-11eb-8fb0-5bc90e3304e0.jpg)<br>
 <br>
 
 ## About this project 📝
@@ -59,6 +58,6 @@ This was suppose to be a 2-4 pearson team project. Things happen so this turned 
 <hr>
 
 * [LaQuinta Williams](https://github.com/willarmy20)
-
+  [Matthew Fisher]- Contributor
 <br>
 <br>
