@@ -60,7 +60,6 @@
 
 ##  <p align="center">Authors</p>
 <hr>
-<p align="center">  [LaQuinta Williams](https://github.com/willarmy20)<br>
-  [Matthew Fisher](https://github.com/MicroFish91)<br>
- </p>
+ [LaQuinta Williams](https://github.com/willarmy20)<br>
+ [Matthew Fisher](https://github.com/MicroFish91)<br>
 <br>
