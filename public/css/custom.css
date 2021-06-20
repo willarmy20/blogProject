@@ -149,7 +149,7 @@ ul.socialicons li a:hover {
 
 /*--- Avatar ---*/
 .avt {
-    margin-top: 16px;
+    margin-top: 2px;
     height: 38px;
 
 }
@@ -163,15 +163,14 @@ ul.socialicons li a:hover {
     font-family: 'Open Sans Bold', sans-serif;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #1abc9c;
+    background-color: orangered;
 }
 
 .avt .btn-primary:hover, 
 .avt .btn-primary:focus, 
 .avt .btn-primary:active, 
 .avt .btn-primary.active{
-    background-color: #1abc9c;
-
+    background-color: black;
 
     border: none;
     box-shadow: none;
