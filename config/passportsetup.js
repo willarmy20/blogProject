@@ -6,7 +6,7 @@ const db = require('../models');
 module.exports = function(req,res,next) {
     passport.use('local', new LocalStrategy( {
         usernameField : 'username',
-        passwordField : 'password'
+        passwordField : 'password',
     }, async (username, password, done) => {
         console.log("local strategy called");
         try {

@@ -84,6 +84,7 @@ ul.socialicons li a:hover {
 /*--- Header ---*/
 .headernav {
     height: 70px;
+    padding-bottom: 5%;
     border-bottom: 1px solid #c9cccd;
 }
 
@@ -190,8 +191,25 @@ ul.socialicons li a:hover {
 .avatar img {
     border-radius: 50%;
     width: 70px;
-    height:70px;
+    height: 69px;
+    padding: 5%;
+    padding-bottom: 5%;
 
+}
+.avatar-1 img{
+    border-radius: 50%;
+    width: 70px;
+    height: 56px;
+    padding: 5%;
+    padding-bottom: 7%;
+}
+
+.avatar-2 img{
+    border-radius: 50%;
+    width: 100px;
+    height: 80px;
+    padding: 12px;
+    padding-left: 8%;
 }
 
 .avatar .status {
@@ -206,7 +224,7 @@ ul.socialicons li a:hover {
 }
 
 .dropdown.avatar .status {
-    right: 14px;
+    right: 19px;
 }
 .caretl {
     color:#363838;
@@ -423,6 +441,22 @@ td.chbox {
 
 
 /*--- Post --*/
+
+.post-beforepagination-2{
+    background-color: rgba(246, 240, 240, 0.925);
+
+}
+.posttext-2{
+    margin: 2%;
+    color: black;
+}
+
+.userinfo-1{
+    text-align: center;
+}
+
+
+
 .post {
     background-color: #ffffff;
 

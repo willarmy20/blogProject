@@ -20,9 +20,9 @@ router.post('/register', async (req, res)=>{
     // console.log('persistedUser: ',persistedUser);
     
     if(persistedUser.length == 0){
-        console.log('made it');
+        // console.log('made it');
         const passwordEncrypted = bcrypt.hashSync(password, 8);
-        // console.log(passwordEncrypted);
+        console.log(passwordEncrypted);
         const result = await db.users.create({
             first_name: first_name,
             last_name: last_name,
