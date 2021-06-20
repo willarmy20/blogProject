@@ -1,10 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcryptjs')
-const app = express();
-const db = require('../models');
 const passport = require('passport');
-const SALT_ROUNDS = 10
 
 
 router.get('/login', async (req, res) => {
@@ -18,4 +14,4 @@ router.post('/login', passport.authenticate('local', { failureRedirect: '/loginF
     res.redirect('/')//after login take me to index
 });
 
-module.exports = router
+module.exports = router;

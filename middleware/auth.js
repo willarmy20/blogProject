@@ -1,5 +1,3 @@
-const { authenticate } = require("passport");
-
 const authReq = (req, res, next) => {
     console.log(req.isAuthenticated());
     // passport adds isAuthenticated

@@ -10,6 +10,11 @@ router.get('/:categoryname/comments/:postid/:postname', async (req, res)=>{
             model: db.users,
             attributes: ['first_name', 'last_name', 'id'],
             required: true
+        },
+        { 
+            model: db.categories,
+            attributes: ['title'],
+            required: true
         }
     ]});
     const comments = await db.comments.findAll({ 

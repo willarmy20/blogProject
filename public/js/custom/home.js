@@ -8,7 +8,7 @@ function appendCommunities(communityList){
   const communityListElement = document.querySelector('#community-list');
   let convertToHTML = "";
   communityList.forEach((community, index) => {
-    convertToHTML += `<li role="presentation"><a role="menuitem" tabindex="-${index + 2}" href="/community/${community.title}">${community.title}</a></li>`;
+    convertToHTML += `<li role="presentation"><a role="menuitem" tabindex="-${index + 2}" href="/community/${community.title}/${community.id}">${community.title}</a></li>`;
   });
   communityListElement.innerHTML += convertToHTML;
 }

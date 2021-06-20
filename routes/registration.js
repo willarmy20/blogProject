@@ -17,7 +17,6 @@ router.post('/register', async (req, res)=>{
             email: username
         }
     });
-    // console.log('persistedUser: ',persistedUser);
     
     if(persistedUser.length == 0){
         // console.log('made it');
@@ -31,7 +30,6 @@ router.post('/register', async (req, res)=>{
         });
         res.redirect('/login');
     } else{
-
         res.render('registration',{
             userExist: true
         })

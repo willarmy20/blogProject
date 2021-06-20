@@ -2,35 +2,28 @@ const express = require('express');
 const router = express.Router();
 const db = require("../models")
 const formatCommunities = require('../utils/formatCommunities');
+const formatPosts = require('../utils/formatPosts');
 
+router.get('/community/:name/:id', async (req, res)=>{
+    const posts = await db.posts.findAll({
+        where: { categoryID: req.params.id },
+        include: [
+            { 
+                model: db.users,
+                attributes: ['first_name'],
+                required: true
+            }
+        ]
+    });
 
-router.get('/community', (req, res)=>{
-    res.render('community');
+    const formattedPosts = formatPosts(posts, req.params.name);
+    
+    res.render('community', {
+        formattedPosts,
+        communityName: req.params.name,
+        communityId: req.params.id
+    });
 })
-
-router.post('/community', async (req, res)=>{
-    try{
-        //get information from header 
-        let {title, description} = req.body;
-        //store title, description inside database
-        let result = await db.categories.create({
-        title: title,
-        description: description
-        })
-        res.redirect('/');
-    }
-    catch(error){
-        res.send(error)
-    }
-})
-
-// Query a specific
-// router.get('/community/:communityName/:pageNumber', async (req, res) => {
-//     const communities = await db.categories.findAll({
-//         where: { }
-//     });
-//     const formattedCommunities = formatCommunities(communities);
-// })
 
 router.get('/communityList/:number', async (req, res) => {
     try {
@@ -66,10 +59,5 @@ router.get('/communityList/:number', async (req, res) => {
         console.log(err);
     }
 });
-
-router.get('/communityList/all',async (req, res)=>{
-    const communities = await db.categories.findAll();
-    res.json(communities);
-})
 
 module.exports = router
