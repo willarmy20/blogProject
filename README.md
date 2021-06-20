@@ -15,7 +15,9 @@
 ## languages Used and technology 💻
 <hr>
 <br>
+<p align="center">
 <img alt="Node Js" src="https://img.shields.io/badge/nodejs%20-%23E34F26.svg?&style=for-the-badge&logo=nodejs&logoColor=white"/>
+ <p>
 <br>
 
 
