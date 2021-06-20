@@ -85,6 +85,7 @@ ul.socialicons li a:hover {
 .headernav {
     height: 70px;
     padding-bottom: 5%;
+    padding-top: 1%;
     border-bottom: 1px solid #c9cccd;
 }
 
@@ -1052,10 +1053,10 @@ a.down:hover {
         left: 36%;
     }
 
-    .post .time,
+    /* .post .time,
     .post .views,
     .post .views {
-    }
+    } */
 
 
     .headernav {
