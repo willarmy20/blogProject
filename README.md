@@ -1,6 +1,6 @@
 # <p align="center"> Game Lounge </p>
 <p align="center">
-  <img width="600" height="200" src="public/images/logo_3.png">
+  <img src="public/images/logo_3.png">
 </p>![](public/images/logo_3.png)<br>
 <br>
 
