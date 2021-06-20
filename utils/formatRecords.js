@@ -1,7 +1,7 @@
 module.exports = function formatRecords(records){
     const allPosts = [];
     let post = {};
-
+    
     records.forEach(record => {
         // Loop through and pull data pieces that we need
         // save inside of a post object

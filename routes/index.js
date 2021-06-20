@@ -18,6 +18,7 @@ router.get('/', async (req, res)=>{
     ]});
 
     const formattedRecords = formatRecords(records);
+    formattedRecords.reverse();
     
     res.render('index', {
         formattedRecords
