@@ -23,23 +23,23 @@
 <hr>
 
 
-<p> This is the api component that calls the objects of players in adds them to the player list. This is where we get the player card information. 
+<p> This is the how the post and images are rendering on the page at once. 
 <br>
 
 ``` <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8">
-                            <% for( let index = 0; index < formattedRecords.length; index++ ) { %>
-                            <!-- POST -->
-                            <div class="post">
-                                <div class="wrap-ut pull-left">
-                                    <div class="userinfo pull-left">
+             <div class="row">
+                  <div class="col-lg-8 col-md-8">
+                       <% for( let index = 0; index < formattedRecords.length; index++ ) { %>
+                          <!-- POST -->
+                          <div class="post">
+                              <div class="wrap-ut pull-left">
+                                  <div class="userinfo pull-left">
                                         <div class="avatar">
                                             <img src="/images/babygamer.jpeg"  alt="" />
-                                            <p><%= formattedRecords[index].username %> </p>
-                                            <div class="status green">&nbsp;</div>
-                                        </div>
-                                   </div>
+                                           <p><%= formattedRecords[index].username %> </p>
+                                        <div class="status green">&nbsp;</div>
+                                  </div>
+                          </div>
 ```
 
 <br>
@@ -47,7 +47,7 @@
 
 ## Challenges Faced
 <hr>
-This was suppose to be a 2-4 pearson team project. Things happen so this turned into a one person project. This was changelling doing the backend and the frontend.
+ ???
 <br>
 <br>
 <br>
