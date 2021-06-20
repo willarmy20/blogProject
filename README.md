@@ -4,7 +4,7 @@
 </p>
 <br>
 
-## About this project 📝
+## <p align="center">About this project 📝</p>
 <hr>
   Game Lounge is a blog page simliar to Reddit. Its a place where users can chat about anything related to games!!!
 <br>
@@ -12,7 +12,7 @@
 <br>
 <br>
 
-## languages Used and technology 💻
+## <p align="center"> Used and technology 💻</p>
 <hr>
 <br>
 <p align="center">
@@ -21,7 +21,7 @@
 <br>
 
 
-## Code snipets
+##<p align="center">Code snipets</p>
 <hr>
 
 
@@ -47,7 +47,7 @@
 <br>
 <br>
 
-## Challenges Faced
+                                ##<p align="center">Challenges Faced</p>
 <hr>
  ???
 <br>
@@ -58,7 +58,7 @@
 
 
 
-## Authors
+                                ##<p align="center">Authors</p>
 <hr>
 
   [LaQuinta Williams](https://github.com/willarmy20)<br>
