@@ -60,6 +60,5 @@
 <hr>
 
   [LaQuinta Williams](https://github.com/willarmy20)
-  [Matthew Fisher]- Contributor(https://github.com/MicroFish91)
-<br>
+  [Matthew Fisher](https://github.com/MicroFish91)-Contributor<br>
 <br>
