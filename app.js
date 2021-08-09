@@ -4,7 +4,7 @@ const cookieSession = require('cookie-session');
 const keys = require('./config/keys')
 const passport = require('passport');
 
-let port = keys.PORT || 3000;
+let port = keys.PORT;
 
 //public
 app.use(express.static('public'));
