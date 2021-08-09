@@ -28,6 +28,17 @@
         <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
         <link rel="stylesheet" type="text/css" href="/rs-plugin/css/settings.css" media="screen" />
 
+        <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+        <!-- <style>
+            .tooltip:not(.shown) {
+                display: none;
+            }
+            emoji-picker {
+                width: 100%;
+                height: 100%;
+            }
+        </style> -->
+
     </head>
     <body>
 
@@ -65,7 +76,8 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
-                            <div class="stnt pull-left">                            
+                            <div class="stnt pull-left"> 
+                                <!--Start Of Form on navbar  -->
                                 <form action="/topicPost" method="get" class="form">
                                     <button class="btn btn-primary" href="/topicPost">Create Post</button>
                                 </form>
@@ -130,7 +142,11 @@
                                             
                                         </div>
                                         <div class="pull-right postreply">
-                                            <div class="pull-left smile"><a href="#"><i class="fa fa-smile-o"></i></a></div>
+                                            <!-- emoji picker -->
+                                            <!-- <div class="pull-left smile"><emoji-picker><a href="#"><i class="fa fa-smile-o"></i></a></emoji-picker></div> -->
+                                            <!-- <div class="tooltip" role="tooltip"> -->
+                                            <!-- <emoji-picker></emoji-picker> -->
+                                            <!-- </div> -->
                                             <div class="pull-left"><button type="submit" class="btn btn-primary">Post</button></div>
                                             <div class="clearfix"></div>
                                         </div>
@@ -282,6 +298,9 @@
 
         </script>
 
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script type="module" src="https://unpkg.com/emoji-picker-element@1"></script> -->
+    <script>"../public/js/emoji.js"</script>
         <!-- END REVOLUTION SLIDER -->
     </body>
 </html>

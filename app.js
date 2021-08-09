@@ -3,7 +3,8 @@ const app = express();
 const cookieSession = require('cookie-session');
 const keys = require('./config/keys')
 const passport = require('passport');
-let port = keys.PORT;
+
+let port = keys.PORT || 3000;
 
 //public
 app.use(express.static('public'));
