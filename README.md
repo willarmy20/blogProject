@@ -18,7 +18,7 @@
 <p align="center">
 <img alt="Node Js" src="https://img.shields.io/badge/nodejs%20-%23E34F26.svg?&style=for-the-badge&logo=nodejs&logoColor=white"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
- <p>
+ -Backend: MySql <p>
 <br>
 
 
