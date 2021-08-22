@@ -12,13 +12,15 @@
 <br>
 <br>
 
-## <p align="center"> Used and technology 💻</p>
+## <p align="center"> ## Tech Stack 💻</p>
 <hr>
 <br>
 <p align="center">
 <img alt="Node Js" src="https://img.shields.io/badge/nodejs%20-%23E34F26.svg?&style=for-the-badge&logo=nodejs&logoColor=white"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
- -Backend: MySql <p>
+* HTML,  CSS, Express.js
+* Backend: Sequelize
+ <p>
 <br>
 
 
@@ -55,6 +57,24 @@
 <br>
 <br>
 <br>
+                                
+  ## MVP
+* Register new users
+* Authenticate users at login
+* Add new user to database
+* Add new user to family
+* Add/update/retrieve/delete new user
+* Mobile responsive
+* Use PostgreSQL for database
+* Create at least 3 tables, with Model classes as is appropriate
+* Make sure that at least 2 of the tables are related (via foreign keys)
+* Allow user login, with passwords encrypted with bcrypt.
+
+## Stretch Goals (Future)
+* Add more communities
+* Add emjois to post feed
+* User who creates a group can email invites to others
+* Working Contact Us Page                             
 
 
 
