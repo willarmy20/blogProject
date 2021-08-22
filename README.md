@@ -1,7 +1,6 @@
 # <p align="center"> Game Lounge </p>
 <p align="center">
   <img src="public/images/logo_3.png">
-  <img src="public/images/homepage.png">
 </p>
 <br>
 
