@@ -6,7 +6,7 @@
 
 ## <p align="center">About this project 📝</p>
 <hr>
-  Game Lounge is a blog page simliar to Reddit. Its a place where users can chat about anything related to games!!!
+  Game Lounge is a blog page simliar to Reddit. Its a place where users can chat about anything related to games!!! You have to be side in to be able to create community for on this site.
 <br>
 <br>
 <br>
@@ -17,6 +17,7 @@
 <br>
 <p align="center">
 <img alt="Node Js" src="https://img.shields.io/badge/nodejs%20-%23E34F26.svg?&style=for-the-badge&logo=nodejs&logoColor=white"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
  <p>
 <br>
 
@@ -47,9 +48,9 @@
 <br>
 <br>
                                 
- ##  <p align="center">Challenges Faced</p>
+ ##  <p align="center">Database</p>
 <hr>
- ???
+ <img src="/public/images/Layout_database.png">
 <br>
 <br>
 <br>
