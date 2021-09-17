@@ -1,9 +1,11 @@
 # <p align="center"> Game Lounge </p>
+
+<p align="center"><a href="https://evening-shelf-23921.herokuapp.com/">Live Demo</a></p>
+  
 <p align="center">
   <img src="public/images/logo_3.png">
 </p>
 <br>
-<p align="center"><a href="https://evening-shelf-23921.herokuapp.com/>Live Demo</a> </p>
   
 <br>
 ## <p align="center">About this project 📝</p>
