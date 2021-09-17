@@ -3,7 +3,9 @@
   <img src="public/images/logo_3.png">
 </p>
 <br>
-<p align="center"><a href="https://evening-shelf-23921.herokuapp.com/>Live Demo</a></p>
+<p align="center"><a href="https://evening-shelf-23921.herokuapp.com/>Live Demo</a> </p>
+  
+<br>
 ## <p align="center">About this project 📝</p>
 <hr>
   Game Lounge is a blog page simliar to Reddit. Its a place where users can chat about anything related to games!!! You have to be side in to be able to create community for on this site. You can see anyone post once coming to the page. You have to registering as a new user if you want to create a post. If you are an existing user, your credentials are authenticated and you can creat a post on to the wall.<br>
